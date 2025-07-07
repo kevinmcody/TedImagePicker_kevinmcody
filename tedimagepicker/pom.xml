@@ -10,7 +10,6 @@
 		  <url>scp://repo/maven2</url>
 		  <layout>default</layout>
 		</repository>
-		...
 	</distributionManagement>
 	
 	<!-- "Some" metadata required by Maven Central. They help in indexing and in various tooling like IDEs.
