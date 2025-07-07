@@ -11,7 +11,7 @@
     -->
     <groupId>io.github.kevinmcody</groupId>
     <artifactId>tedimagepicker</artifactId>
-    <version>1.6.7</version>
+    <version>1.6.8-SNAPSHOT</version>
     <packaging>jar</packaging>
     <!-- Name and description are also required for Central -->
     <name>TedImagePicker</name>
@@ -34,8 +34,8 @@
             developerConnection is used by e.g. maven-release-plugin to push changes to the repo.
             Some "newbies" might be better off with https, I always go with ssh 😎
         -->
-        <developerConnection>scm:git:ssh://github.com/kevinmcody/TedImagePicker_kevinmcody.git</developerConnection>
-      <tag>tedimagepicker-1.6.7</tag>
+        <developerConnection>scm:git:ssh://git@github.com:/kevinmcody/TedImagePicker_kevinmcody.git</developerConnection>
+      <tag>tedimagepicker-1.6.8</tag>
   </scm>
 
 
