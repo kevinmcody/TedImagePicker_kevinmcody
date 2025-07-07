@@ -5,9 +5,8 @@
 	<distributionManagement>
 		<repository>
 		  <uniqueVersion>false</uniqueVersion>
-		  <id>kevinmcody1</id>
-		  <name>kevinmcody Repository 1</name>
-		  <url>scp://repo/maven2</url>
+		  <id>central</id>
+		  <url>https://repo1.maven.org/maven2</url>
 		  <layout>default</layout>
 		</repository>
 	</distributionManagement>
@@ -45,7 +44,7 @@
             Some "newbies" might be better off with https, I always go with ssh 😎
         -->
         <developerConnection>scm:git:ssh://git@github.com:/kevinmcody/TedImagePicker_kevinmcody.git</developerConnection>
-      <tag>tedimagepicker-1.6.11</tag>
+      <tag>tedimagepicker-1.6.12</tag>
   </scm>
 
 
