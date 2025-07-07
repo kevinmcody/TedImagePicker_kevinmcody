@@ -11,7 +11,7 @@
     -->
     <groupId>io.github.kevinmcody</groupId>
     <artifactId>tedimagepicker</artifactId>
-    <version>1.6.4-SNAPHOT</version>
+    <version>1.6.6-SNAPSHOT</version>
     <packaging>jar</packaging>
     <!-- Name and description are also required for Central -->
     <name>TedImagePicker</name>
@@ -35,7 +35,7 @@
             Some "newbies" might be better off with https, I always go with ssh 😎
         -->
         <developerConnection>https://github.com/kevinmcody/TedImagePicker_kevinmcody.git</developerConnection>
-      <tag>tedimagepicker-1.6.4</tag>
+      <tag>tedimagepicker-1.6.6</tag>
   </scm>
 
 
