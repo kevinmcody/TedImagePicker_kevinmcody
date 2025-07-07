@@ -70,4 +70,5 @@ fastlane/readme.md
 target/
 target/*/
 release.properties
+pom.xml
 pom.xml.releaseBackup
