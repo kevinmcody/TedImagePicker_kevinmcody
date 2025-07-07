@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<!-- "Some" metadata required by Maven Central. They help in indexing and in various tooling like IDEs.
+          Do NOT remove these, but replace with proper values for your project. -->
+
+
+    <!-- This is important for Central publishing: use a namespace that is granted for you.
+         Easiest for personal projects: GitHub account
+    -->
+    <groupId>io.github.kevinmcody</groupId>
+    <artifactId>tedimagepicker</artifactId>
+    <version>1.6.1</version>
+    <packaging>jar</packaging>
+    <!-- Name and description are also required for Central -->
+    <name>TedImagePicker</name>
+    <description>TedImagePicker is simple image picker</description>
+
+
+    <organization>
+        <name>Buffalo Computer Graphics</name>
+    </organization>
+    <url>https://github.com/kevinmcody/TedImagePicker_kevinmcody</url>
+    <developers>
+        <developer>
+            <name>ParkSangGwon</name>
+        </developer>
+    </developers>
+    <scm>
+        <url>https://github.com/kevinmcody/TedImagePicker_kevinmcody</url>
+        <connection>scm:git:git://github.com/kevinmcody/TedImagePicker_kevinmcody.git</connection>
+        <!--
+            developerConnection is used by e.g. maven-release-plugin to push changes to the repo.
+            Some "newbies" might be better off with https, I always go with ssh 😎
+        -->
+        <developerConnection>scm:git:ssh://git@github.com:/kevinmcody/TedImagePicker_kevinmcody.git</developerConnection>
+      <tag>release</tag>
+  </scm>
+
+
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/kevinmcody/TedImagePicker_kevinmcody/issues</url>
+    </issueManagement>
+    <licenses>
+        <license>
+            <name>Apache 2</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+
+    <!-- That's "all" metadata that is needed for Central. -->
+	
+	<profiles>
+		<profile>
+		   <id>release</id>
+		   <build>
+			   <plugins>
+				   <plugin>
+					   <groupId>org.sonatype.central</groupId>
+					   <artifactId>central-publishing-maven-plugin</artifactId>
+					   <version>0.6.0</version>
+					   <extensions>true</extensions>
+					   <configuration>
+						   <publishingServerId>central</publishingServerId>
+						   <autoPublish>true</autoPublish>
+					   </configuration>
+				   </plugin>
+
+				   <plugin>
+					   <groupId>org.apache.maven.plugins</groupId>
+					   <artifactId>maven-source-plugin</artifactId>
+					   <version>3.3.1</version>
+					   <executions>
+						   <execution>
+							   <id>attach-sources</id>
+							   <goals>
+								   <goal>jar-no-fork</goal>
+							   </goals>
+						   </execution>
+					   </executions>
+				   </plugin>
+
+				   <plugin>
+					   <groupId>org.apache.maven.plugins</groupId>
+					   <artifactId>maven-javadoc-plugin</artifactId>
+					   <version>3.10.1</version>
+					   <executions>
+						   <execution>
+							   <id>attach-javadocs</id>
+							   <goals>
+								   <goal>jar</goal>
+							   </goals>
+						   </execution>
+					   </executions>
+				   </plugin>
+
+				   <plugin>
+					   <groupId>org.apache.maven.plugins</groupId>
+					   <artifactId>maven-gpg-plugin</artifactId>
+					   <version>3.2.4</version>
+					   <executions>
+						   <execution>
+							   <id>sign-artifacts</id>
+							   <phase>verify</phase>
+							   <goals>
+								   <goal>sign</goal>
+							   </goals>
+						   </execution>
+					   </executions>
+				   </plugin>
+				   
+				   <plugin>
+						<!-- Fixing version & activating "release" profile for those who use release plugin -->
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-release-plugin</artifactId>
+						<version>3.1.1</version>
+						<configuration>
+							<autoVersionSubmodules>true</autoVersionSubmodules>
+
+							<!-- Forward compatibility: "release-profile" will be removed from super POM.
+								 It's better to define javadocs, sources, signing, etc. in an independent "release" profile. -->
+							<useReleaseProfile>false</useReleaseProfile>
+							<releaseProfiles>release</releaseProfiles>
+						</configuration>
+					</plugin>
+				   
+			   </plugins>
+		   </build>
+	   </profile>
+	</profiles>
+	
+</project>
