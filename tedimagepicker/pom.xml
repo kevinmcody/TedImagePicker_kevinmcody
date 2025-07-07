@@ -2,6 +2,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	
+	<distributionManagement>
+		<repository>
+		  <uniqueVersion>false</uniqueVersion>
+		  <id>kevinmcody1</id>
+		  <name>kevinmcody Repository 1</name>
+		  <url>scp://repo/maven2</url>
+		  <layout>default</layout>
+		</repository>
+		...
+	</distributionManagement>
+	
 	<!-- "Some" metadata required by Maven Central. They help in indexing and in various tooling like IDEs.
           Do NOT remove these, but replace with proper values for your project. -->
 
@@ -35,7 +46,7 @@
             Some "newbies" might be better off with https, I always go with ssh 😎
         -->
         <developerConnection>scm:git:ssh://git@github.com:/kevinmcody/TedImagePicker_kevinmcody.git</developerConnection>
-      <tag>tedimagepicker-1.6.10</tag>
+      <tag>tedimagepicker-1.6.11</tag>
   </scm>
 
 
