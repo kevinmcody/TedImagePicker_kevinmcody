@@ -29,12 +29,12 @@
     </developers>
     <scm>
         <url>https://github.com/kevinmcody/TedImagePicker_kevinmcody</url>
-        <connection>scm:git:git://github.com/kevinmcody/TedImagePicker_kevinmcody.git</connection>
+        <connection>https://github.com/kevinmcody/TedImagePicker_kevinmcody.git</connection>
         <!--
             developerConnection is used by e.g. maven-release-plugin to push changes to the repo.
             Some "newbies" might be better off with https, I always go with ssh 😎
         -->
-        <developerConnection>scm:git:ssh://git@github.com:/kevinmcody/TedImagePicker_kevinmcody.git</developerConnection>
+        <developerConnection>https://github.com/kevinmcody/TedImagePicker_kevinmcody.git</developerConnection>
       <tag>tedimagepicker-1.6.2</tag>
   </scm>
 
