@@ -20,7 +20,7 @@
     -->
     <groupId>io.github.kevinmcody</groupId>
     <artifactId>tedimagepicker</artifactId>
-    <version>1.6.12-SNAPSHOT</version>
+    <version>1.6.12</version>
     <packaging>jar</packaging>
     <!-- Name and description are also required for Central -->
     <name>TedImagePicker</name>
