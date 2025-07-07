@@ -35,7 +35,7 @@
             Some "newbies" might be better off with https, I always go with ssh 😎
         -->
         <developerConnection>scm:git:ssh://git@github.com:/kevinmcody/TedImagePicker_kevinmcody.git</developerConnection>
-      <tag>tedimagepicker-1.6.9</tag>
+      <tag>tedimagepicker-1.6.10</tag>
   </scm>
 
 
