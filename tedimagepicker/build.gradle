@@ -1,5 +1,5 @@
 plugins {
-    id "com.vanniktech.maven.publish" version "0.27.0"
+    id "com.vanniktech.maven.publish" version "0.30.0"
 }
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
@@ -62,13 +62,13 @@ mavenPublishing {
 
     signAllPublications()
 
-    coordinates("io.github.ParkSangGwon", "tedimagepicker", "1.6.1")
+    coordinates("io.github.kevinmcody", "tedimagepicker", "1.6.14")
 
     pom {
         name = "TedImagePicker"
         description = "TedImagePicker is simple image picker"
         inceptionYear = "2019"
-        url = "https://github.com/ParkSangGwon/TedImagePicker/"
+        url = "https://github.com/kevinmcody/TedImagePicker_kevinmcody"
         licenses {
             license {
                 name = "The Apache Software License, Version 2.0"
@@ -84,9 +84,9 @@ mavenPublishing {
             }
         }
         scm {
-            url = "https://github.com/ParkSangGwon/TedImagePicker"
-            connection = "scm:git:git://github.com/ParkSangGwon/TedImagePicker.git"
-            developerConnection = "=scm:git:ssh://git@github.com/ParkSangGwon/TedImagePicker.git"
+            url = "https://github.com/kevinmcody/TedImagePicker_kevinmcody"
+            connection = "scm:git:git://github.com/kevinmcody/TedImagePicker_kevinmcody.git"
+            developerConnection = "=scm:git:ssh://git@github.com/kevinmcody/TedImagePicker_kevinmcody.git"
         }
     }
 }
